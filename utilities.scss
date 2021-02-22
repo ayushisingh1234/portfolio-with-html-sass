@@ -1,0 +1,131 @@
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  // Buttons
+  %btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn {
+    &-main {
+      @extend %btn-shared;
+      color: #333;
+      background-color: orange;
+    }
+  
+    &-light {
+      @extend %btn-shared;
+      color: #333;
+      background-color: white;
+    }
+  
+    &-dark {
+      @extend %btn-shared;
+      color: #f4f4f4;
+      background-color: rgb(66, 44, 44);
+    }
+  }
+  
+  button[class^='btn-']:hover,
+  a[class^='btn-']:hover,
+  input[class^='btn-']:hover {
+    background-color: orange;
+  }
+  
+  // Background
+  .bg {
+    &-main {
+      background:  orange;
+      color: set-text-color( orange);
+    }
+  
+    &-dark {
+      background: brown;
+      color: set-text-color(brown);
+    }
+  
+    &-light {
+      background: white;
+      color: set-text-color(white);
+    }
+  
+    &-medium {
+      background: wheat;
+      color: set-text-color(wheat);
+    }
+  }
+  
+  
+  .lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  
+  // Padding
+  .py {
+    &-1 {
+      padding: 1rem 0rem;
+    }
+  
+    &-2 {
+      padding: 2rem 0rem;
+    }
+  
+    &-3 {
+      padding: 3rem 0rem;
+    }
+  
+    &-4 {
+      padding: 4rem 0rem;
+    }
+  }
+  
+  // Margin
+  .my {
+    &-1 {
+      margin: 1rem 0rem;
+    }
+  
+    &-2 {
+      margin: 2rem 0rem;
+    }
+  
+    &-3 {
+      margin: 3rem 0rem;
+    }
+  
+    &-4 {
+      margin: 4rem 0rem;
+    }
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+  
+  
+  .bottom-line {
+    height: 2px;
+    width: 3rem;
+    background: orange;
+    display: block;
+    margin: 0 auto 1rem auto;
+  } 
